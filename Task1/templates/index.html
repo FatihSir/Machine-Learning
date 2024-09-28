@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Number Game (Between 0-1000)</h1>
+        <p>Try to guess the number I’m thinking of!</p>
+
+        <form id="guessForm" class="form">
+            <input type="number" id="guessInput" placeholder="Enter your guess" required>
+            <button type="submit">Submit Guess</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+</body>
+</html>
