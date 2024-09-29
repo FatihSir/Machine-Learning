@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Number</title>
+    <title>Sayı Tahmin Oyunu</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='main.js') }}" defer></script>
 </head>
 <body>
     <div class="container">
-        <h1>Guess the Number Game (Between 0-1000)</h1>
-        <p>Try to guess the number I’m thinking of!</p>
+        <h1>Sayı Tahmin Oyunu</h1>
+        <p>0 ile 1000 arasında düşündüğüm sayıyı tahmin etmeye çalışınız!</p>
 
         <form id="guessForm" class="form">
-            <input type="number" id="guessInput" placeholder="Enter your guess" required>
-            <button type="submit">Submit Guess</button>
+            <input type="number" id="guessInput" placeholder="Tahminini gir" required>
+            <button type="submit">Tahminini Gönder</button>
         </form>
 
+        <!-- Geri bildirim için İlerleme Çubuğu -->
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <!-- Sonuç Mesajı -->
         <div id="result" class="result"></div>
+    </div>
+
+    <!-- Geliştirici imzası ve danışman bilgisi -->
+    <div class="footer">
+        Bu Oyun MOHAMEDALFATEH T. M. SAEED Tarafından Geliştirilmiştir <br>
+        Danışman: Dr. Öğr. Üyesi İdris Sancaktar
     </div>
 </body>
 </html>

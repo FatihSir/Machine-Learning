@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('guessForm');
     const resultDiv = document.getElementById('result');
+    const progressBar = document.getElementById('progressBar');
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -16,11 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(response => response.json())
         .then(data => {
-            displayResult(data.message, data.message.includes('Congratulations!') ? 'success' :
-                data.message.includes('higher') || data.message.includes('lower') ? 'warning' : 'error');
+            displayResult(data.message, data.message.includes('Tebrikler!') ? 'success' :
+                data.message.includes('daha yüksek') || data.message.includes('daha düşük') ? 'warning' : 'error');
+
+            // Tahmin ne kadar yakınsa, ilerleme çubuğu genişliğini güncelle
+            updateProgressBar(guessInput, data.target);
         })
         .catch(error => {
-            displayResult('An error occurred. Please try again.', 'error');
+            displayResult('Bir hata oluştu. Lütfen tekrar deneyin.', 'error');
         });
     });
 
@@ -29,5 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
         resultDiv.classList.remove('success', 'error', 'warning');
         resultDiv.classList.add(type);
         resultDiv.style.display = 'block';
+    }
+
+    function updateProgressBar(guess, target) {
+        const max = 1000;
+        const progress = Math.abs(target - guess) / max * 100;
+        progressBar.style.width = `${100 - progress}%`;
     }
 });
