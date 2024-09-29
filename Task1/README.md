@@ -30,7 +30,7 @@ Canlı demo için: [www.alfateh.tech](http://www.alfateh.tech)
 
 3. **Uygulamayı çalıştırın**:
     ```bash
-    python app.py
+    python guess.py
     ```
 
 4. **Tarayıcıda açın**:
@@ -40,7 +40,7 @@ Canlı demo için: [www.alfateh.tech](http://www.alfateh.tech)
 
 ```bash
 .
-├── app.py                  # Ana Flask uygulaması
+├── guess.py                  # Ana Flask uygulaması
 ├── templates
 │   └── index.html           # Ana HTML dosyası
 ├── static
