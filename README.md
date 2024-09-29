@@ -1,5 +1,5 @@
 # Machine Learning Projects - Makine Öğrenmesi Projeleri
-![Cover](Task1/1.jpeg)
+![Cover](1.jpeg)
 ## Giriş
 Bu depoda, makine öğrenimi alanında geliştirilmiş çeşitli projeler bulunmaktadır. Projeler, hem temel kavramları anlamak hem de farklı teknolojileri uygulamak için tasarlanmıştır. Her proje, kendi içinde öğrenme ve deneyim kazanma fırsatı sunmaktadır. 
 
