@@ -20,7 +20,7 @@ Canlı demo için: [www.alfateh.tech](http://www.alfateh.tech)
 
 1. **Depoyu klonlayın**:
     ```bash
-    git clone https://github.com/FatihSir/Machine-Learning.git/Task1
+    git clone https://github.com/FatihSir/Machine-Learning.git
     ```
 
 2. **Gereksinimleri yükleyin**:
