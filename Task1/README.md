@@ -16,6 +16,10 @@ Canlı demo için: [www.alfateh.tech](http://www.alfateh.tech)
   - Kullanıcı doğru tahmini yaptığında, kaç denemede bulduğunu gösterir ve oyun sıfırlanarak yeniden başlar.
   - Oturum yönetimi ile her kullanıcı için ayrı bir rastgele sayı ve deneme sayısı tutulur.
 
+## Program Akışı
+
+![akış](akış.png)
+
 ## Kurulum Adımları
 
 1. **Depoyu klonlayın**:
