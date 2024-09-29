@@ -1,5 +1,5 @@
 # Sayı Tahmin Oyunu - Flask Uygulaması
-
+![Cover](SayıTahmini.png)
 
 Bu proje, Flask çerçevesini kullanarak geliştirilen basit bir **Sayı Tahmin Oyunu** web uygulamasıdır. Oyunun amacı, 0 ile 1000 arasında rastgele bir sayı seçilip kullanıcının bu sayıyı tahmin etmeye çalışmasıdır. Her tahminde geri bildirim verilerek kullanıcıya doğru sayıyı bulması konusunda yardımcı olunur. Doğru tahmin yapıldığında, kaç denemede sayının bulunduğu ekranda gösterilir.
 
